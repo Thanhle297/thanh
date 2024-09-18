@@ -33,9 +33,9 @@ for (let i of product.data){
     let containers =document.createElement("div");
     containers.classList.add("card");
 
-    let name = name.createElement("h4");
+    let name = document.createElement("h4");
     name.classList.add("product-name");
-    name.innerText = i.text.toUpperCase;
+    name.innerText = i.text.toUpperCase();
     containers.appendChild(name);
 
     let sub = document.createElement("h5");
@@ -43,5 +43,5 @@ for (let i of product.data){
     containers.appendChild(sub);
 
     card.appendChild(containers);
-    document.getElementById("container").appendChild("card");
+    document.getElementById("container").appendChild(card);
 }
